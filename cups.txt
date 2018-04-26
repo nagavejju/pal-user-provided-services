@@ -1,0 +1,49 @@
+export EUREKA_CLIENT_ENABLED=false
+export RIBBON_EUREKA_ENABLED=false
+export ALBUM_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8081
+export MOVIE_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8082
+
+
+cf create-service p-config-server standard movie-fun-config \-c "{\"git\": {\"uri\": \"https://github.com/platform-acceleration-lab/movie-fun-config.git\", \"label\": \"master\"}}"
+
+jdbc:mysql://externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com:3306/externaldatabase?user=pal&password=password
+
+cf cups ups-datbase -p "host, port, name, username, password, uri, jdbcUrl"
+
+
+"hostname": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com",
+            "port": 3306,
+            "name": "externaldatabase",
+            "username": "pal",
+            "password": "password",
+            "uri": "mysql://pal:password@externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com:3306/externaldatabase?reconnect=true",
+            "jdbcUrl": "jdbc:mysql://externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com:3306/externaldatabase?user=pal&password=password"
+
+cf curl -u patrick.j.hanes@wellsfargo.com:fxbx6xuy "https://apps.sys.longs.pal.pivotal.io/organizations/b5c8cb5f-f403-4688-97c0-7c521aa3a0c1/spaces/da4c28b9-c7fc-4de0-9bfc-d85451498f59/applications/9133d32e-51ad-4ec9-9aa5-ff21514bdd11/tasks" \
+  -X POST \
+  -d '{"command":"echo foo; sleep 5; echo bar;"}
+
+
+cf curl /pal-ups_v1/apps/$(cf app pal-ups_v1-tasks-sample --guid)/tasks -X POST -d '{"command":"echo foo; sleep 5; echo bar;"}
+
+curl -i -XPUT -H"Content-Type: application/json" https://pal-ups-sweet-bilby.apps.longs.pal.pivotal.io/9 -d"{\"id\":9,\"name\":\"Nageswara\",\"nickname\":"\lightening\"}"
+
+
+curl -i -XPUT -H'Content-Type: application/json' 'https:"\/"\/pal-ups-sweet-bilby.apps.longs.pal.pivotal.io"\/9' -d'{\"id\":9,\"name\":\"Nageswara\",\"nickname\":"\lightening\"}'
+
+curl -X PUT -k -H 'Content-Type: application/json' -i 'https://pal-ups-sweet-bilby.apps.longs.pal.pivotal.io/9' --data '{"id":9,"name":"Nageswara","nickname":"nagesh"}'
+
+
+
+curl -i localhost:8083/projects?accountId=${ACCOUNT_ID}
+
+
+curl "https://apps.sys.longs.pal.pivotal.io/organizations/b5c8cb5f-f403-4688-97c0-7c521aa3a0c1/spaces/da4c28b9-c7fc-4de0-9bfc-d85451498f59/applications/9133d32e-51ad-4ec9-9aa5-ff21514bdd11/tasks" \
+  -X POST \
+  -H "Authorization: bearer [token]" \
+  -d '{ "command": "rake db:migrate" }'
+
+
+
+cf run-task springcloudtask-date CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:10%,metaspace:10% -stackThreads=100 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher
+

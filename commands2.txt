@@ -1,0 +1,1007 @@
+  642  cd ../pal-tracker-distributed/
+  643  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  644  cd ../assignment-submission/
+  645  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io/
+  646  cd ../..
+  647  cd dev
+  648  ls
+  649  git add info.txt
+  650  cd ..
+  651  ls
+  652  cd workspace
+  653  cd pal-tracker-d*
+  654  git add .
+  655  git commit -m "Uploading to Giri's GitHub"
+  656  git push
+  657  git remote add gkgowdar https://github.com/gkgowdar/pal-tracker-distributed.git
+  658  git push
+  659  git push gkgowdar
+  660  history
+  661  ! 567
+  662  | 567
+  663  ~ 567
+  664  ls -l
+  665  ls -l567
+  666  ls -l567 567
+  667  ssh-keygen
+  668  ls
+  669  cat giriNew
+  670  cat giriNew.pub
+  671  history
+  672  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  673  cf logout
+  674  cf login
+  675  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  676  cf apps
+  677  cf target -s sandbox
+  678  cf apps
+  679  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  680  cf apps
+  681  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  682  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  683  cf apps
+  684  cf logout
+  685  cf login
+  686  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  687  cfapps
+  688  cf apps
+  689  history
+  690  ./fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name giri-gowdar
+  691  fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name giri-gowdar
+  692  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  693  history
+  694  cd ../..
+  695  cd dev
+  696  ls
+  697  git add info.txt
+  698  git
+  699  cd ../workspace/pal-tracer-
+  700  cd ../workspace/pal-trackerer-
+  701  cd ../workspace/pal-tracker-distributed/
+  702  clear
+  703  curl https://springcloud-broker.apps.longs.pal.pivotal.io/info
+  704  curl https://spring-cloud-broker.apps.longs.pal.pivotal.io/info
+  705  ./gradlew platform-services:eureka-server:bootRun
+  706  curl https://spring-cloud-broker.apps.longs.pal.pivotal.io/info
+  707  ./gradlew clean build
+  708  ./gradlew platform-services:eureka-server:bootRun
+  709  curl https://spring-cloud-broker.apps.longs.pal.pivotal.io/info
+  710  ./gradlew platform-services:eureka-server:bootRun
+  711  ps
+  712  kill 17360
+  713  ps
+  714  ps -f 17360
+  715  kill -f 17360
+  716  kill --help
+  717  kill 17360
+  718  ps
+  719  jobs
+  720  kill 17360
+  721  kill -9 17360
+  722  ps
+  723  clear
+  724  curl https://spring-cloud-broker.apps.longs.pal.pivotal.io/info
+  725  ./gradlew :applications:allocations-server:dependencies
+  726  ./gradlew clean build
+  727  cf services
+  728  cf -logout
+  729  cf logout
+  730  cf login
+  731  cf services
+  732  cf create-service tracker-service-registry
+  733  cf create-service -pmysql -pmysql tracker-service-registry
+  734  cf create-service p-mysql p-mysql tracker-service-registry
+  735  cf target -s sandbox
+  736  cf create-service p-mysql p-mysql tracker-service-registry
+  737  cf services
+  738  git add .
+  739  git commit -m"service registry changes"
+  740  git push
+  741  history
+  742  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  743  fly -t pal-concourse login
+  744  fly -t pal-concourse logout
+  745  fly -t pal-concourse login
+  746  fly -t pal-concourse login gayathri-mani
+  747  cf
+  748  cf apps
+  749  fly --help
+  750  fly set-pipeline gayathri-mani
+  751  fly set-team gayathri-mani
+  752  fly set-team --team-name gayathri-mani
+  753  fly login -c https://concourse.longs.pal.pivotal.io
+  754  fly login -c https://concourse.longs.pal.pivotal.io -t pal-concourse
+  755  fly -t pal-concourse login 
+  756  fly -t pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name gayathri-mani
+  757  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  758  ./gradlew clean build
+  759  cf services
+  760  ./gradlew clean build
+  761  ./gradlew bootRun
+  762  clear
+  763  mysql -uroot < databases/create_databases.sql
+  764  ./gradlew devMigrate testMigrate
+  765  ./gradlew clean build
+  766  ./gradlew bootRun
+  767  ./gradlew clean build
+  768  git add .
+  769  git commit -m"services changes"
+  770  git status
+  771  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  772  ./gradlew bootRun
+  773  git add .
+  774  git status
+  775  git commit -m"services changes"
+  776  git push
+  777  PS
+  778  ps
+  779  ./gradlew bootRun
+  780  ./gradlew platform-services:eureka-server:bootRun
+  781  git add .
+  782  git commit -m"app props changes"
+  783  git push
+  784  cf push -f manifest-timesheets.yml 
+  785  cf push -f manifest-registration.yml 
+  786  cd workspace/pal-tracker-distributed/
+  787  ./gradlew platform-services:eureka-server:bootRun
+  788  cat platform-services/eureka-server/src/main/resources/applications.properties 
+  789  ./gradlew platform-services:eureka-server:bootRun
+  790  ps
+  791  ./gradlew platform-services:eureka-server:bootRun
+  792  cf push -f manifest-backlog.yml 
+  793  cf push -f manifest-registration.yml 
+  794  cf push -f manifest-timesheets.yml 
+  795  cf push -f manifest-registration.yml 
+  796  cf push -f manifest-allocations.yml 
+  797  cf push -f manifest-timesheets.yml 
+  798  cf push -f manifest-registration.yml 
+  799  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"100\"}"
+  800  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project B\", \"accountId\": \"100\"}"
+  801  cu
+  802  curl -i localhost:8083/accounts?ownerId=1
+  803  curl -i localhost:8083/peojects
+  804  curl -i localhost:8083/projects
+  805  curl -i localhost:8083/projects/1
+  806  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project AA\", \"accountId\": \"100\"}"
+  807  clear
+  808  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectId\": \"1\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  809  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectName\": \"Project A\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  810  ./gradlew applications:timesheets-server:bootRun
+  811  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/registration -d'{"name": "Pete"}'
+  812  curl -i localhost:8083/accounts?ownerId=Pete
+  813  curl -i localhost:8083/accounts?ownerId=1
+  814  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"100\"}"
+  815  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"1\"}"
+  816  clear
+  817  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project B\", \"accountId\": \"1\"}"
+  818  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectId\": \"1\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  819  ps 
+  820  ps -all
+  821  gradle --help
+  822  ./gradlew --stop applications:registration-server
+  823  ps
+  824  ps -all
+  825  jobs
+  826  jps
+  827  ps --help
+  828  ps list
+  829  ps -list
+  830  ps --list
+  831  ps -all
+  832  ps -l
+  833  ps -t
+  834  ps -s
+  835  jps --help
+  836  jps
+  837  ./gradlew applications:allocations-server:bootRun
+  838  ./gradlew bootRun
+  839  cf restage pal-tracker
+  840  ./gradlew bootRun
+  841  ps
+  842  ps -l
+  843  ps -all
+  844  cf services
+  845  ./gradlew clean build
+  846  ./gradlew clean build -ignore-test
+  847  ./gradlew clean build
+  848  cf push -f manifest-allocations.yml 
+  849  cf services
+  850  cf delete-service tracker-service-registry
+  851  cf services
+  852  cf marketplace
+  853  cf push -f manifest-allocations.yml 
+  854  cf push -f manifest-backlog.yml 
+  855  cd ../
+  856  cd assignment-submission/
+  857  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery   -PregistrationServerUrl=
+  858  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io/
+  859  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gama.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  860  cd ../pal-tracker-distributed/
+  861  ./gradlew clean build
+  862  cf push -f manifest-backlog.yml 
+  863  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gama.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  864  cd ../assignment-submission/
+  865  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gama.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  866  cf apps
+  867  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gama.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  868  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  869  cd ../pal-tracker-distributed/
+  870  cf apps
+  871  cd ../pal-tracker-distributed/
+  872  ./gradlew clean build
+  873  cf push -f manifest-backlog.yml 
+  874  cd ../assignment-submission/
+  875  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gama.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gama.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gama.apps.longs.pal.pivotal.io/
+  876  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io/
+  877  cd ../pal-tracker-distributed/
+  878  cf apps
+  879  cf services
+  880  clear
+  881  cf delete-service tracker-service-registry
+  882  cf create-service
+  883  cf create-service p-service-registry standard tracker-service-registry
+  884  cf push -f manifest-allocations.yml 
+  885  cf services
+  886  cf push -f manifest-allocations.yml 
+  887  cf push -f manifest-backlog.yml 
+  888  cf push -f manifest-registration.yml 
+  889  cf push -f manifest-timesheets.yml 
+  890  cd ../assignment-submission/
+  891  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io/
+  892  cd ../pal-tracker-distributed/
+  893  git status
+  894  git add .
+  895  git commit -m"more changes"
+  896  git push
+  897  history
+  898  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  899  cd ../assignment-submission/
+  900  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io/
+  901  history
+  902  clear
+  903  cd ../pal-tracker-distributed/
+  904  ./gradlew platform-services:eureka-server:bootRun
+  905  ./gradlew backlog-server:bootRun
+  906  ./gradlew applications:backlog-server:bootRun
+  907  ./gradlew bootRun
+  908  ./gradlew bootRun --parallel
+  909  ./gradlew clean build
+  910  ./gradlew bootRun --parallel
+  911  clear
+  912  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectId\": \"1\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  913  ./gradlew applications:registration-server:bootRun
+  914  cf marketplace
+  915  cf create-service 
+  916  cf marketplace
+  917  cf create-service standard p-circuit-breaker-dashboard  tracker-circuit-breaker-dashboard
+  918  cf create-service  p-circuit-breaker-dashboard standard  tracker-circuit-breaker-dashboard
+  919  cf services
+  920  git add .
+  921  git commit -m"circuit breaker changes"
+  922  git push
+  923  clear
+  924  curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-gg.apps.longs.pal.pivotal.io/registration -d'{"name": "gama"}'
+  925  curl -i localhost:8083/accounts?ownerId=52
+  926  curl -i https://registration-pal-gg.apps.longs.pal.pivotal.io/accounts?ownerId=52
+  927  curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-gg.apps.longs.pal.pivotal.io/projects -d"{\"name\": \"Project A\", \"accountId\": \"52\"}"
+  928  curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-gg.apps.longs.pal.pivotal.io/projects -d"{\"name\": \"Project B\", \"accountId\": \"52\"}"
+  929  curl -i -XPOST -H"Content-Type: application/json" https://allocations-pal-gg.apps.longs.pal.pivotal.io//allocations/ -d"{\"projectId\": \"52\", \"userId\": \"52\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  930  curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-gg.apps.longs.pal.pivotal.io/stories -d"{"projectId": 52, "name": "Find some reeds"}"
+  931  curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-gg.apps.longs.pal.pivotal.io/stories -d"{"\projectId\": \"52\", \"name\": \"Find some reeds\"}"
+  932  curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-gg.apps.longs.pal.pivotal.io/stories/ -d"{"\projectId\": \"52\", \"name\": \"Find some reeds\"}"
+  933  curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-gg.apps.longs.pal.pivotal.io/stories/ -d"{"\projectId\": \"52\", \"name\": \"Find some reeds\"}" 
+  934  clear
+  935  curl -i -XPOST -H"Content-Type: application/json" https://timesheets-pal-gg.apps.longs.pal.pivotal.io/time-entries/ -d{"\projectId\": \"52\", \"userId\": \"52\", \"date\": \"2015-05-17\", \"hours\": \"6\"}"
+  936  curl -i -XPOST -H"Content-Type: application/json" https://timesheets-pal-gg.apps.longs.pal.pivotal.io/time-entries/ -d'{"projectId": "52", "userId": "52", "date": "2015-05-10", "hours": "6"}'
+  937  curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-gg.apps.longs.pal.pivotal.io/stories/ -d'{"projectId": "52", "name": "Find some reeds"}' 
+  938  cd ../assignment-submission/
+  939  ./gradlew cloudNativeDeveloperDistributedSystemWithCircuitBreaker -PregistrationServerUrl=https://registration-pal-gg.apps.longs.pal.pivotal.io -PbacklogServerUrl=https://backlog-pal-gg.apps.longs.pal.pivotal.io   -PallocationsServerUrl=https://allocations-pal-gg.apps.longs.pal.pivotal.io -PtimesheetsServerUrl=https://timesheets-pal-gg.apps.longs.pal.pivotal.io
+  940  git status
+  941  cd workspace
+  942  ls
+  943  git statsu
+  944  git status
+  945  ls
+  946  cd pal-tracker-di*
+  947  git status
+  948  cd..
+  949  cd ..
+  950  git clone git@github.com:gkgowdar/apps-movie-fun-code.git
+  951  git clone https://github.com/gkgowdar/apps-movie-fun-code.git 
+  952  cd apps-movie-fun-code/
+  953  ls
+  954  mvn clean package -DskipTests -Dmaven.test.skip=true
+  955  locate tommy
+  956  locate tomee
+  957  cp target/moviefun.war /home/pal_user/dev/tomee/webapps/
+  958  cp target/moviefun.war /home/pal_user/dev/tomee/webapps
+  959  /home/pal_user/dev/tomee/bin/catalina.sh run
+  960  cd workspace
+  961  cd apps-movie-fun-code/
+  962  cf push moviefun -p target/moviefun.war --random-route
+  963  cf apps
+  964  cf logout
+  965  cf login
+  966  cf push moviefun -p target/moviefun.war --random-route
+  967  MOVIE_FUN_URL=https://moviefun-patient-jaguar.apps.longs.pal.pivotal.io/  mvn test
+  968  cf push moviefun -p target/moviefun.war -b https://github.com/cloudfoundry-community/tomee-buildpack.git --random-route
+  969  cf restart moviefun
+  970  cf restage moviefun
+  971  MOVIE_FUN_URL=http://moviefun-patient-jaguar.apps.longs.pal.pivotal.io mvn test
+  972  mysql -uroot
+  973  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  974  cf logs moviefun
+  975  cd workspace_ajay/apps-movie-fun-code/
+  976  mvn clean package
+  977  cf push moviefun -p target/moviefun.war --random-route
+  978  cf logout
+  979  cf login
+  980  cf push moviefun -p target/moviefun.war --random-route
+  981  clear
+  982  mkdir -p ~/shared/moviefun
+  983  minio server ~/shared
+  984  rabbitmq-server start
+  985  cd .
+  986  cd ../../
+  987  ls
+  988  cd ..
+  989  ls
+  990  mvn clean package
+  991  cf push moviefun --random-route --no-start -p target/moviefun.war
+  992  cf start moviefun
+  993  git push
+  994  git push origin write-to-blobstore-ajay
+  995  git remote add gayathrirx https://github.com/gayathrirx/apps-movie-fun-code.git
+  996  git push gayathrirx
+  997  git checkout logging-start
+  998  ls
+  999  git checkout logging-start -b logging-g3
+ 1000  clear
+ 1001  git add
+ 1002  git commit -m"logging changes"
+ 1003  git add .
+ 1004  git commit -m"logging changes"
+ 1005  git push gayathrirx
+ 1006  git checkout background-jobs-start
+ 1007  git checkout background-jobs-start -b background-jobs-g3
+ 1008  mysql -uroot < moviefun.ddl 
+ 1009  mysql -uroot 
+ 1010  clear
+ 1011  mysql -uroot 
+ 1012  mvn spring-boot:run
+ 1013  clear
+ 1014  cf install-plugin -r "CF-Community" mysql-plugin
+ 1015  cf mysql movies-mysql < schema.ddl
+ 1016  ls
+ 1017  cf mysql movies-mysql < moviefun.ddl
+ 1018  curl -X POST http://localhost:8080/rabbit -d ""
+ 1019  cf service rabbit
+ 1020  mvn clean package
+ 1021  history | grep 'cf push'
+ 1022  cf push moviefun -p target/moviefun.war --random-route
+ 1023  curl -X POST http://moviefun-pretypographical-bombshell..apps.longs.pal.pivotal.io/rabbit -d ""
+ 1024  curl -X POST http://moviefun-pretypographical-bombshell.apps.longs.pal.pivotal.io/rabbit -d ""
+ 1025  curl -X POST https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io/rabbit -d ""
+ 1026  clear
+ 1027  git add .
+ 1028  git commit -m"rabbit changes"
+ 1029  git push gayathrirx
+ 1030  cd workspace
+ 1031  cd apps-movie-fun-code/
+ 1032  mvn clean package
+ 1033  cf push moviefun -p target/moviefun.war --random-route
+ 1034  cd ..
+ 1035  cd assignment-submission/
+ 1036  ./gradlew replatformingManagingDataSources -PmovieFunUrl=https://moviefun-patient-jaguar.apps.longs.pal.pivotal.io/ 
+ 1037  clear
+ 1038  vi build.gradle 
+ 1039  ./gradlew replatformingRemovingPersistenceToFileSystem -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io/
+ 1040  uname
+ 1041  uname -a
+ 1042  top
+ 1043  cat /proc/cpuinfo 
+ 1044  free
+ 1045  free -M
+ 1046  free -m
+ 1047  free -g
+ 1048  df
+ 1049  df -k
+ 1050  ./gradlew replatformingLogging -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io/
+ 1051  mysql -uroot
+ 1052  ./gradlew replatformingBackgroundJobsWithDb -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io
+ 1053  ./gradlew replatformingBackgroundJobsWithAmqp -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io/
+ 1054  cd workspace
+ 1055  cd assignment-submission/
+ 1056  cd..
+ 1057  cd ..
+ 1058  cd mo
+ 1059  ls
+ 1060  cd apps-movie-fun-code/
+ 1061  MOVIE_FUN_URL=http://localhost:8080 mvn package
+ 1062  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1063  cf restage moviefun
+ 1064  cd ..
+ 1065  cd assignment-submission/
+ 1066  ./gradlew replatformingSpringBootification -PmovieFunUrl=https://http://moviefun-patient-jaguar.apps.longs.pal.pivotal.io/
+ 1067  ./gradlew replatformingSpringBootification -PmovieFunUrl=https://moviefun-patient-jaguar.apps.longs.pal.pivotal.io/
+ 1068  git status
+ 1069  cd..
+ 1070  cd ..
+ 1071  cd apps-movie-fun-code/
+ 1072  git status
+ 1073  git remote add
+ 1074  git remote add https://github.com/gkgowdar/apps-movie-fun-code.git
+ 1075  git remote ggowdar1 https://github.com/gkgowdar/apps-movie-fun-code.git
+ 1076  git remote(ggowdar) ( https://github.com/gkgowdar/apps-movie-fun-code.git)
+ 1077  git add
+ 1078  git add.
+ 1079  git add .
+ 1080  git commit -m "spring boot lap"
+ 1081  git push
+ 1082  git checkout two-data-sources-start
+ 1083  git checkout -b my-branch
+ 1084  git commit -am "work in progress"
+ 1085  git checkout two-data-sources-start
+ 1086  git reset --hard refs/tags/two-data-sources-start
+ 1087  git clean -df
+ 1088  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1089  mysql -uroot
+ 1090  Create EntityManagerFactoryBeans configurations
+ 1091  To enable the EntityManager used by your AlbumsBean and MoviesBean classes, you will do the following:
+ 1092  Set up the MoviesBean and AlbumsBean
+ 1093  Update the @PersistenceContext annotations in the MoviesBean and AlbumsBean classes with the persistence unit names you have chosen.
+ 1094  Now run the application.
+ 1095  Is the /setup endpoint working?
+ 1096  What error do you see?
+ 1097  Create TransactionManagers configurations
+ 1098  To fix the /setup endpoint, we need to create two transaction managers, one for each database.
+ 1099  Deploy to Pivotal Cloud Foundry.
+ 1100  Add connection pooling to the data sources
+ 1101  Assignment
+ 1102  Once you are done with the lab and the application is deployed and working on PCF, you can submit the assignment using the replatformingManagingDataSources gradle task. It requires you to provide the movieFunUrl project property. For example:
+ 1103  cd ~/workspace/assignment-submission
+ 1104  ./gradlew replatformingManagingDataSources -PmovieFunUrl=https://${MOVIE_FUN_APP_URL}
+ 1105  export VCAP_SERVICES='{"p-mysql": [{"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/albums?user=root"}, "name": "albums-mysql"}, {"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/movies?user=root"}, "name": "movies-mysql"}]}'
+ 1106  mvn clean package
+ 1107  cd ..
+ 1108  cd apps-movie-fun-code/
+ 1109  mvn clean package
+ 1110  mvn spring-boot:run
+ 1111  clear
+ 1112  cd 
+ 1113  cd workspace-ajay
+ 1114  cd
+ 1115  ls -ltr
+ 1116  ls -ltr 
+ 1117  cd workspace_ajay/
+ 1118  ls -l
+ 1119  ls -la
+ 1120  cd apps-movie-fun-code/
+ 1121  ls -l
+ 1122  git branch
+ 1123  git push
+ 1124  git push -f origin write-to-blobstore-ajay
+ 1125  clear
+ 1126  mvn clean package
+ 1127  mvn spring-boot:run
+ 1128  clear
+ 1129  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"${MINIO_ACCESS_KEY:9ZJI30530LJNJ5MXTTWB}\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"${MINIO_SECRET_ACCESS_KEY:X6iOKX9fIxKPs5Qdeium3JZ9QcucJpaU/LxfraDa}\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1130  export S3_ENDPOINTURL=http://127.0.0.1:9000
+ 1131  mvn spring-boot:run
+ 1132  export VCAP_SERVICES='{"aws-s3":[{"credentials":{"access_key_id":"9ZJI30530LJNJ5MXTTWB","bucket":"movie-fun-course","secret_access_key":"X6iOKX9fIxKPs5Qdeium3JZ9QcucJpaU/LxfraDa"},"label":"aws-s3","name":"moviefun-s3"}]}'
+ 1133  mvn spring-boot:run
+ 1134  export VCAP_SERVICES='{"aws-s3":[{"credentials":{"access_key_id":"9ZJI30530LJNJ5MXTTWB","bucket":"moviefun","secret_access_key":"X6iOKX9fIxKPs5Qdeium3JZ9QcucJpaU/LxfraDa"},"label":"aws-s3","name":"moviefun-s3"}]}'
+ 1135  mvn spring-boot:run
+ 1136  cf set-env moviefun _JAVA_OPTIONS -Dlogging.level.org.springframework=DEBUG
+ 1137  mvn spring-boot:run
+ 1138  cf create-user-provided-service paper-trail -l syslog-tls://logs3.papertrailapp.com:23775
+ 1139  cf bind-service moviefun paper-trail
+ 1140  cf restage moviefun
+ 1141  mvn clean package
+ 1142  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1143  mvn spring-boot:run
+ 1144  history | grep 'cf push'
+ 1145  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1146  mysql -uroot
+ 1147  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1148  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1149  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1150  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1151  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1152  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1153  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1154  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1155  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1156  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1157  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1158  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1159  mvn -Dskiptests -Dmaven.test.skip=true clean package
+ 1160  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1161  clear
+ 1162  aws configure
+ 1163  aws s3 cp albums.csv s3://moviefun-s3
+ 1164  aws configure
+ 1165  aws s3 cp albums.csv s3://cf-8bd66774-20b0-48b6-85ea-18625dea2e39
+ 1166  git add .
+ 1167  git commit -m"Background Jobs with the Database "
+ 1168  git push gayathrirx
+ 1169  git checkout background-jobs-rabbit-start
+ 1170  git checkout background-jobs-rabbit-start -b background-jobs-rabbit-g3
+ 1171  clear
+ 1172  mvn spring-boot:run
+ 1173  curl -X POST http://localhost:8080/rabbit -d ""
+ 1174  minio server ~/shared
+ 1175  rabbitmq-server start
+ 1176  ll /var/lib/rabbitmq/mnesia/rabbit@nofx.pid
+ 1177  cd /var/lib/rabbitmq/mnesia/
+ 1178  cd /var/lib/rabbitmq/
+ 1179  ls -l
+ 1180  cd mnesia/
+ 1181  rabbitmq-plugins enable rabbitmq_management
+ 1182  cd 
+ 1183  cd workspace_ajay/apps-movie-fun-code/
+ 1184  rabbitmq-plugins enable rabbitmq_management
+ 1185  ps -ef | grep rabbit
+ 1186  ls -l /usr/sbin/rabbit*
+ 1187  kill 622 638
+ 1188  ps -ef | grep rabbit
+ 1189  sudo kill 622
+ 1190  ps -ef | grep rabbit
+ 1191  rabbitmq-plugins enable rabbitmq_management
+ 1192  ps -ef | grep rabbit
+ 1193  sudo kill 20118
+ 1194  ps -ef | grep rabbit
+ 1195  sudo rabbitmq-plugins enable rabbitmq_management
+ 1196  sudo rabbitmq-server start
+ 1197  ps -ef | grep nofx
+ 1198  cd workspace_ajay/
+ 1199  ll
+ 1200  cd apps-movie-fun-code/
+ 1201  ls -ltr 
+ 1202  git status
+ 1203  git branch
+ 1204  git add origin ajayvkadam@github.com
+ 1205  history | grep origin
+ 1206  git remote add ajay_moviefun https://github.com/AjayVKadam/apps-movie-fun-code.git
+ 1207  git push ajay_moviefun
+ 1208  git checkout background-jobs-g3
+ 1209  git push ajay_moviefun
+ 1210  git checkout logging-g3
+ 1211  git push ajay_moviefun
+ 1212  git checkout background-jobs-rabbit-g3
+ 1213  cd workspace_ajay/apps-platform-acceleration-removing-instance-specific-state-code/
+ 1214  mvn -Dmaven.tomcat.port=9090 -DinstanceNumber=1 tomcat7:run-war
+ 1215  CF_INSTANCE_INDEX=1 mvn -Dmaven.tomcat.port=9090 tomcat7:run-war
+ 1216  cd ../workspace/
+ 1217  cd ../../workspace/assignment-submission/
+ 1218  ./gradlew replatformingRemoveInstanceSpecificState -PsessionStateUrl=https://remove-session-state-anxious-koala.apps.longs.pal.pivotal.io
+ 1219  cat build.gradle 
+ 1220  ./gradlew replatformingStruts -PstrutsAppUrl=https://struts-generous-hartebeest.apps.longs.pal.pivotal.io
+ 1221  ./start-load-balancer.sh
+ 1222  sudo ./start-load-balancer.sh
+ 1223  cd workspace_ajay/
+ 1224  ls -l
+ 1225  which start-load-balancer.sh
+ 1226  find / -name start-load-balancer.sh
+ 1227  cd /home/pal_user/Downloads
+ 1228  ls -l
+ 1229  apt nginx-1.14.0.tar.gz
+ 1230  gzip -d nginx-1.14.0.tar.gz 
+ 1231  ls -l
+ 1232  vi nginx_signing.key
+ 1233  sudo apt-key add nginx_signing.key 
+ 1234  ls -l
+ 1235  sudo apt nginx-1.14.0.tar
+ 1236  vi nginx_signing.key 
+ 1237  sudo apt-key add nginx_signing.key 
+ 1238  vi /etc/apt/sources.list
+ 1239  ls -l  /etc/apt/sources.list
+ 1240  sudo vi /etc/apt/sources.list
+ 1241  apt-get update
+ 1242  sudo apt-get update
+ 1243  sudo apt-get install nginx
+ 1244  sudo vi /etc/apt/sources.list
+ 1245  sudo apt-get install nginx
+ 1246  apt --fix-broken install
+ 1247  sudo apt --fix-broken install
+ 1248  sudo apt-get install nginx
+ 1249  sudo apt --fix-broken install
+ 1250  ps -ef | grep nginx
+ 1251  ls /usr/sbin/nginx*
+ 1252  ls -l /usr/sbin/nginx*
+ 1253  netstat -a 
+ 1254  sudo apt install net-tools
+ 1255  netstat -a 
+ 1256  sudo apt --fix-broken install
+ 1257  sudo apt-get install nginx
+ 1258  ps -ef | grep nginx
+ 1259  netstat -a | grep 912
+ 1260  netstat -a | grep nginx
+ 1261  find / -name start-load-balancer.sh
+ 1262  sudo find / -name start-load-balancer.sh
+ 1263  cd 
+ 1264  ./start-load-balancer.sh 
+ 1265  cd workspace_ajay/
+ 1266  ls -l
+ 1267  git clone https://github.com/AjayVKadam/apps-platform-acceleration-removing-instance-specific-state-code.git
+ 1268  ls -l
+ 1269  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1270  ll
+ 1271  mvn -Dmaven.tomcat.port=8080 -DinstanceNumber=0 tomcat7:run-war
+ 1272  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1273  export CF_INSTANCE_INDEX=0
+ 1274  mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1275  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1276  mvn clean package
+ 1277  cf push remove-session-state -p target/remove-session-state-lab.war -i 2 --random-route --no-start
+ 1278  cf start remove-session-state
+ 1279  clear
+ 1280  git add
+ 1281  git add .
+ 1282  git commit -m "remove instance state"
+ 1283  git status
+ 1284  git remotes
+ 1285  git remote
+ 1286  git remote add ajayk https://github.com/AjayVKadam/apps-platform-acceleration-removing-instance-specific-state-code.git
+ 1287  git remote
+ 1288  git push ajayk
+ 1289  cd ../apps-movie-fun-code/
+ 1290  git remote
+ 1291  cd -
+ 1292  cd ..
+ 1293  git clone https://github.com/platform-acceleration-lab/apps-platform-acceleration-struts-code.git
+ 1294  ls -l
+ 1295  cd *struts*
+ 1296  ls -l
+ 1297  clear
+ 1298  cd ..
+ 1299  ls
+ 1300  cd *struts*
+ 1301  mysql -uroot
+ 1302  mvn spring-boot:run
+ 1303  mysql -uroot
+ 1304  mvn spring-boot:run
+ 1305  mvn clean package
+ 1306  cf push struts -p target/struts.war --random-route --no-start
+ 1307  cf start struts
+ 1308  git add -p
+ 1309  git commit -m"struts"
+ 1310  git status
+ 1311  git branch
+ 1312  git add remote ajayk https://github.com/AjayVKadam/apps-platform-acceleration-struts-code.git
+ 1313  git  remote add ajayk https://github.com/AjayVKadam/apps-platform-acceleration-struts-code.git
+ 1314  git push ajayk
+ 1315  git config
+ 1316  git config --global user.name
+ 1317  git config user.name
+ 1318  git config --local user.name
+ 1319  git config --system user.name
+ 1320  git config --global user.name
+ 1321  git status
+ 1322  git add .
+ 1323  git commit -m"struts missing files"
+ 1324  git push ajayk
+ 1325  cd ..
+ 1326  git clone https://github.com/gayathrirx/apps-platform-acceleration-ant-code.git
+ 1327  cd *ant*
+ 1328  ls -l
+ 1329  ls -all
+ 1330  rm rf .idea
+ 1331  rm -rf .idea
+ 1332  find . -name *.iml -exec rm {} \;
+ 1333  ls -all
+ 1334  mvn clean package
+ 1335  cd workspace
+ 1336  cd assignment-submission/
+ 1337  ./gradlew modernizationStrutsToSpring -PstrutsAppUrl=http://localhost:8080/
+ 1338  netstat 
+ 1339  man netstat
+ 1340  uname -a
+ 1341  free
+ 1342  cd .
+ 1343  cd
+ 1344  cd ls -lrt
+ 1345  ls
+ 1346  cd workspace
+ 1347  ls
+ 1348  history
+ 1349  cf logout
+ 1350  git config --global user.name "srirampvvm"
+ 1351  git config --global user.email "plnvbs@gmail.com"
+ 1352  git clone https://github.com/srirampvvm/apps-platform-acceleration-struts-code.git
+ 1353  cd apps-platform-acceleration-struts-code/
+ 1354  git checkout modernize-mvc-start
+ 1355  git checkout -b struts-code-pm
+ 1356  mvn spring-boot:run
+ 1357  git commit -a -m "initial"
+ 1358  git push
+ 1359  git push -f
+ 1360  git status
+ 1361  git push --set-upstream origin struts-code-pm
+ 1362  clear
+ 1363  cd ..
+ 1364  history
+ 1365  git config --global user.name "gayathrirx"
+ 1366  git config --global user.name "gayathrirx@hotmail.com"
+ 1367  git clone https://github.com/gayathrirx/apps-movie-fun-modernization-code.git
+ 1368  cd apps-movie-fun-modernization-code/
+ 1369  git checkout gradlization-start
+ 1370  git checkout -b maven-gradle-g3
+ 1371  mysql -uroot -e 'DROP DATABASE IF EXISTS movies; CREATE DATABASE movies;'
+ 1372  mysql -uroot movies < ~/workspace/apps-movie-fun-modernization-code/db/schema.ddl
+ 1373  gradle wrapper
+ 1374  ./gradlew init
+ 1375  ./gradlew tasks
+ 1376  gradle -q init
+ 1377  ./gradlew init
+ 1378  gradle -q --help
+ 1379  Task
+ 1380  gradle init
+ 1381  ./gradlew bootRun
+ 1382  gradle build
+ 1383  ./gradlew clean build
+ 1384  history
+ 1385  history | grep '.war'
+ 1386  ./gradlew build
+ 1387  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1388  env
+ 1389  echo "source ~/workspace/apps-movie-fun-modernization-code/local.env" >> ~/.bashrc
+ 1390  env
+ 1391  ls
+ 1392  source ~/.bashrc
+ 1393  echo "source ~/workspace/apps-movie-fun-modernization-code/local.env" >> ~/.bashrc
+ 1394  source ~/.bashrc
+ 1395  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1396  source ~/.bashrc
+ 1397  cd 
+ 1398  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1399  source ~/.bashrc
+ 1400  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1401  source ~/.bashrc
+ 1402  env
+ 1403  cd -
+ 1404  gradle bootRun
+ 1405  cd workspace/
+ 1406  cd '*moder*'
+ 1407  ls
+ 1408  cd apps-movie-fun-modernization-code
+ 1409  history | grep '.war'
+ 1410  cf push moviefun -p build/libs/moviefun-1.1.0-SNAPSHOT.war -b java_buildpack_offline --random-route
+ 1411  cf login -a https://api.sys.longs.pal.pivotal.io
+ 1412  cf push moviefun -p build/libs/moviefun-1.1.0-SNAPSHOT.war -b java_buildpack_offline --random-route
+ 1413  cd ../assignment-submission/
+ 1414  ./gradlew modernizationMavenToGradle -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io/
+ 1415  cd -
+ 1416  history
+ 1417  gradle cfPush
+ 1418  gradle cfPush --debug
+ 1419  gradle cfPush
+ 1420  git push -f
+ 1421  git push --set-upstream origin maven-gradle-g3
+ 1422  git checkout multiple-jars-start
+ 1423  git branch
+ 1424  git status
+ 1425  git commit -a -m"gradaliation"
+ 1426  git push
+ 1427  git checkout multiple-jars-start
+ 1428  git commit -a -m"gradaliation"
+ 1429  git push
+ 1430  git checkout multiple-jars-start
+ 1431  git checkout -b multiple-jars-g3
+ 1432  clear
+ 1433  cd workspace/apps-movie-fun-modernization-code/
+ 1434  ./gradlew bootRun
+ 1435  ./gradlew movie-fun-app:bootRun
+ 1436  history | grep ':bootrun'
+ 1437  history | grep ':Bootrun'
+ 1438  history | grep ':bootRun'
+ 1439  ./gradlew applications:movie-fun-app:bootRun
+ 1440  ./gradlew dependenciesGraph
+ 1441  ./gradlew applications:movies:dependenciesGraph
+ 1442  ./gradlew components:movies:dependenciesGraph
+ 1443  ./gradlew dependenciesGraph
+ 1444  open build/dependenciesGraph/graph.dot.png
+ 1445  ls
+ 1446  ./gradlew dependenciesGraph
+ 1447  ./gradlew applications:movie-fun-app:bootRun
+ 1448  cd ../assignment-submission/
+ 1449  clear
+ 1450  ./gradlew modernizationMultipleJars -PmovieFunUrl=https://moviefun-nice-cassowary.apps.longs.pal.pivotal.io
+ 1451  cd -
+ 1452  ./gradlew applications:movie-fun-app:bootRun
+ 1453  cleat
+ 1454  clear
+ 1455  git commit -a -m "components"
+ 1456  git push
+ 1457  git push --set-upstream origin multiple-jars-g3
+ 1458  cd ..
+ 1459  ./gradlew build
+ 1460  ./gradlew components:albums:bootRun
+ 1461  cd components/albums/
+ 1462  gradle wrapper
+ 1463  cd -
+ 1464  ./gradlew build
+ 1465  ./gradlew dependenciesGraph
+ 1466  cf push movie-fun-app -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war --no-start --random-route
+ 1467  cf start movie-fun-app
+ 1468  cf start movie-fun
+ 1469  cf push moviefun -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war --no-start --random-route
+ 1470  cf bind-service moviefun movies-database
+ 1471  cf start moviefun
+ 1472  cf delete-service movies-database
+ 1473  ./gradlew build
+ 1474  cd workspace/apps-movie-fun-modernization-code/
+ 1475  git checkout microservices-start
+ 1476  history
+ 1477  git status
+ 1478  git commit -a -m "missing files"
+ 1479  git push
+ 1480  cd workspace/apps-movie-fun-modernization-code/
+ 1481  git checkout microservices-start
+ 1482  ./gradlew build
+ 1483  history
+ 1484  ./gradlew dependenciesGraph
+ 1485  export MOVIES_URL=http://localhost:8082/movies
+ 1486  export ALBUMS_URL=http://localhost:8081/albums
+ 1487  history
+ 1488  history
+ 1489  history |grep 'minio'
+ 1490  minio server ~/shared
+ 1491  ps -ef |grep 'minio"
+ 1492  ps -ef |grep 'minio'
+ 1493  kill -9 17312
+ 1494  kill -9 17352
+ 1495  ps -ef |grep 'minio'
+ 1496  minio server ~/shared
+ 1497  ps -ef  |grep 'minio'
+ 1498  ps -ef
+ 1499  ps -ef |grep '9000'
+ 1500  netstat
+ 1501  netstat |grep '9000'
+ 1502  ps jps
+ 1503  jps
+ 1504  hsitory
+ 1505  history
+ 1506  minio server ~/shared
+ 1507  ps -ef | grep '9000'
+ 1508  netstat 
+ 1509  netstat -a | grep 9000
+ 1510  minio
+ 1511  minio -help
+ 1512  ps -ef | grep 9000
+ 1513  cd workspace/apps-movie-fun-modernization-code/
+ 1514  ./gradlew applications:movie-service:bootRun
+ 1515  ps -ef | grep 8082
+ 1516  ./gradlew applications:movie-service:bootRun
+ 1517  env
+ 1518  ./gradlew applications:movie-service:bootRun
+ 1519  history
+ 1520  env
+ 1521  cd workspace/apps-movie-fun-modernization-code/
+ 1522  ./gradlew applications:movie-fun-app:bootRun
+ 1523  env
+ 1524  ./gradlew applications:movie-fun-app:bootRun
+ 1525  ./gradlew applications:album-service:bootRun
+ 1526  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1527  source ~/.bashrc
+ 1528  ./gradlew applications:album-service:bootRun
+ 1529  cd ~/workspace_pjh/
+ 1530  cd apps-movie-fun-modernization-code/
+ 1531  ./gradlew applications:movie-fun-app:bootRun
+ 1532  clear
+ 1533  ./gradlew applications:movie-fun-app:bootRun
+ 1534  clear
+ 1535  ./gradlew applications:movie-fun-app:bootRun
+ 1536  export APPLICATION_OAUTH_ENABLED=true
+ 1537  ./gradlew applications:movie-fun-app:bootRun
+ 1538  clear
+ 1539  ./gradlew applications:movie-fun-app:bootRun
+ 1540  clear
+ 1541  ./gradlew applications:movie-fun-app:bootRun
+ 1542  clear
+ 1543  ./gradlew applications:movie-fun-app:bootRun
+ 1544  clear
+ 1545  export EUREKA_CLIENT_ENABLED=false
+ 1546  export RIBBON_EUREKA_ENABLED=false
+ 1547  export ALBUM_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8081
+ 1548  export MOVIE_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8082
+ 1549  ./gradlew applications:movie-fun-app:bootRun
+ 1550  clear
+ 1551  export APPLICATION_OAUTH_ENABLED=false
+ 1552  ./gradlew applications:movie-fun-app:bootRun
+ 1553  clear
+ 1554  export MOVIES_PAGESIZE=6
+ 1555  ./gradlew applications:movie-fun-app:bootRun
+ 1556  export MOVIES_PAGESIZE=5
+ 1557  ./gradlew applications:movie-fun-app:bootRun
+ 1558  clear
+ 1559  cd ..
+ 1560  git clone https://github.com/nagavejju/pal-user-provided-services.git
+ 1561  cd pal-user-provided-services/
+ 1562  ls -lrt
+ 1563  git checkout -b lab
+ 1564  ls -lrt
+ 1565  clear
+ 1566  ./gradlew clean build
+ 1567  ./gradle run
+ 1568  ./gradlew spring-boot: run
+ 1569  ./gradlew spring-boot:run
+ 1570  gradlew tasks
+ 1571* gradle t
+ 1572* 
+ 1573  ./gradlew bootRun
+ 1574  cf login
+ 1575  cf push 
+ 1576  cf push pal-ups -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar --random-route 
+ 1577  cf buildpacks
+ 1578  cf cups ups-datbase -p "host, port, name, username, password, uri, jdbcUrl"
+ 1579  ./gradlew clean build
+ 1580  ./gradlew clean build -x test
+ 1581  cf push pal-ups -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar --random-route 
+ 1582  cf push
+ 1583  clear
+ 1584  cf push
+ 1585  cf curl /pal-ups_v1/apps/$(cf app pal-ups_v1-tasks-sample --guid)/tasks -X POST -d '{"command":"echo foo; sleep 5; echo bar;"}
+'
+ 1586  cf curl /pal-ups_v1/apps/$(cf app pal-ups_v1 --guid)/tasks -X POST -d '{"command":"echo foo; sleep 5; echo bar;"}
+'
+ 1587  cf curl -u patrick.j.hanes@wellsfargo.com:fxbx6xuy "https://apps.sys.longs.pal.pivotal.io/organizations/b5c8cb5f-f403-4688-97c0-7c521aa3a0c1/spaces/da4c28b9-c7fc-4de0-9bfc-d85451498f59/applications/9133d32e-51ad-4ec9-9aa5-ff21514bdd11/tasks"   -X POST   -d '{"command":"echo foo; sleep 5; echo bar;"}
+'
+ 1588  cf curl  "https://apps.sys.longs.pal.pivotal.io/organizations/b5c8cb5f-f403-4688-97c0-7c521aa3a0c1/spaces/da4c28b9-c7fc-4de0-9bfc-d85451498f59/applications/9133d32e-51ad-4ec9-9aa5-ff21514bdd11/tasks"   -X POST   -d '{"command":"echo foo; sleep 5; echo bar;"}
+'
+ 1589  clear
+ 1590  cf pal-ups_v1 tasks
+ 1591  cf tasks pal-ups_v1
+ 1592  ./gradlew clean build -x test
+ 1593  cf push
+ 1594  cf tasks pal-ups
+ 1595  cf  pal-ups sample
+ 1596  clear
+ 1597  cf run-task pal-ups sample
+ 1598  cf run-task pal-ups "curl -X PUT -k -H 'Content-Type: application/json' -i 'https://pal-ups-sweet-bilby.apps.longs.pal.pivotal.io/9' --data '{"id":9,"name":"Nageswara","nickname":"nagesh"}'"
+ 1599  clear
+ 1600  git push --set-upstream origin lab
+ 1601  clear
+ 1602  cd ..
+ 1603  cd cf-task-demo/
+ 1604  ./deploy.sh 
+ 1605  clear
+ 1606  git init
+ 1607  git add .
+ 1608  git commit -m "First commit"
+ 1609  git remote add origin remote https://github.com/nagavejju/cf-task-demo.git
+ 1610  git remote add origin remote https://github.com/nagavejju/cf-task-demo
+ 1611  git remote add origin https://github.com/nagavejju/cf-task-demo.git
+ 1612  git push -u origin master
+ 1613  cd ..
+ 1614  cd git clone https://github.com/papicella/SpringCloudTaskTodaysDate.git
+ 1615  git clone https://github.com/papicella/SpringCloudTaskTodaysDate.git
+ 1616  cd SpringCloudTaskTodaysDate/
+ 1617  git remote add origin https://github.com/nagavejju/SpringCloudTaskTodaysDate-.git
+ 1618  git remote add origin https://github.com/nagavejju/SpringCloudTaskTodaysDate.git
+ 1619  git remote add SpringCloudTaskTodaysDate https://github.com/nagavejju/SpringCloudTaskTodaysDate-.git
+ 1620  git commit -m "inital progress"
+ 1621  git push -u SpringCloudTaskTodaysDate master
+ 1622  cd ..
+ 1623  rm -rf SpringCloudTaskTodaysDate/
+ 1624  ls -lrt
+ 1625  git clone https://github.com/nagavejju/SpringCloudTaskTodaysDate-.git
+ 1626  cd SpringCloudTaskTodaysDate-/
+ 1627  clear
+ 1628  mvn clean package
+ 1629  clear
+ 1630  cf push
+ 1631  cf stop springcloudtask-date
+ 1632  cf push springcloudtask-date --no-route --health-check-type none -p ./target/springcloudtasktodaysdate-0.0.1-SNAPSHOT.jar -m 512m
+ 1633  cf stop springcloudtask-date
+ 1634  cf run-task springcloudtask-date JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.10.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                   -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext
+                   -Djava.security.properties=$PWD/.java-buildpack/security_providers/java.security $JAVA_OPTS" &&                    CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.9.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=300 -loadedClasses=15790
+                   -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec
+ 1635  clear
+ 1636  cf run-task springcloudtask-date JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.10.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/security_providers/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.9.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=300 -loadedClasses=15790 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.org.springframework.boot.loader.JarLauncher
+ 1637  clear
+ 1638  cf run-task springcloudtask-date CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher
+ 1639  cf run-task springcloudtask-date CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:10%,metaspace:10% -stackThreads=100 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher
+ 1640  history > commands2.txt
+ 1641  history > ~/commands2.txt
