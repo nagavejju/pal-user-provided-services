@@ -1,0 +1,6 @@
+---
+applications:
+- name: pal-ups
+  path: build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar
+  services:
+  - ups-database
