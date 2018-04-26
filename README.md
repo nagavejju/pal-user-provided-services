@@ -10,8 +10,8 @@ connection credentials so the app can connect to it. Similar to regular
 service bindings, the credentials you specify will be available via
 `VCAP_SERVICES`.
 
-In this lab you will leverage a user provided service to connect to an
-Oracle database running on RDS.  Once you have connected, you'll write a
+In this lab you will leverage a user provided service to connect to a
+MySQL database running on RDS.  Once you have connected, you'll write a
 simple UI that lists data from a table in the database.
 
 
