@@ -19,7 +19,13 @@ Lab
 -----
 
 
-1. Fork the lab on [GitHub](https://github.com/platform-acceleration-lab/pal-user-provided-services)
+1. Fork this lab
+1. Clone it to your workspace
 1. Get it working locally
-1. Create a user provided service binding
+1. Push the app to PCF
+
+1. Modify the app to read your names from a database with a table called _cohort_ and a column called names.
+1. Display them on the start page
+1. Create a [user provided service](https://docs.cloudfoundry.org/devguide/services/user-provided.html) that exposes the credentials for our external database via VCAP_SERVICES
+1. Bind that service to the app
 1. Push your app to PCF
